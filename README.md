@@ -1,5 +1,7 @@
 # My First STM32 Project
+
 Simple PCB with minimum circuit plus SWD, USART, I2C and USB. Designed wholly in KiCAD 9.
+
 ---
 Take a look a the fully sick 3D render:
 
@@ -10,6 +12,7 @@ Take a look a the fully sick 3D render:
 ![pcb_render](assembled_board.jpg)
 
 The board's indicator LEDs are both on. The green 'PWR' LED indicates the 3V3 bus is live. The orange 'DEBUG' LED is a result of the 'blinky' routine the MCU is running being in the HIGH state.
+
 ---
 The following is the HAL-free c script to blink the DEBUG LED
 
