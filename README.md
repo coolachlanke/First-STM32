@@ -10,6 +10,8 @@ Take a look a the fully sick 3D render:
 ![pcb_render](assembled_board.jpg)
 
 The board's indicator LEDs are both on. The green 'PWR' LED indicates the 3V3 bus is live. The orange 'DEBUG' LED is a result of the 'blinky' routine the MCU is running being in the HIGH state.
+---
+Following is the HAL-free c script to blink the
 
 ```#include <stdint.h>
 
@@ -31,5 +33,5 @@ int main(void) {
         *gpioc_odr &= ~(1 << 13);  // Reset PC13 (LED OFF)
         for (uint32_t i = 0; i < 50000; ++i) {}    // Pseudo-delay function
     }
-}```
+}
 
